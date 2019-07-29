@@ -8,50 +8,58 @@
     <link rel="stylesheet" href="Contents/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CNunito+Sans:400,700&display=swap"
         rel="stylesheet">
-        
+
     <title><?= $title ?></title> <!-- Titre des pages -->
 
+    <script src="https://kit.fontawesome.com/c0aa93735f.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
 
 </head>
 
 <body>
-    <div id="global">
-
-        <header>
+      <header>
             <div id="header_title">
                 <a href="#">
-                    <h1>NG - Photographie</h1>
-                </a> <!-- Titre du site -->
+                    <h1>Photographie</h1>
+                </a>
             </div>
 
             <nav>
-                <div class="nav-container">
+                <div class="header_nav">
                     <!-- Menu non responsive -->
                     <ol class="nav-tabs">
-                        <li class="nav-tab"><a href="Home"> Accueil</a></li>
-                        <li class="nav-tab"><a href="About"> A propos </a></li>
-                        <li class="nav-tab"><a href="Portfolio"> Portfolio </a></li>
-                        <li class="nav-tab"><a href="Application"> Application </a></li>
-                        <li class="nav-tab"><a href="Contact"> Contact </a></li>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Mes Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">A Propos</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ol>
                 </div>
             </nav>
+
+            <div id="header_icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </div>
+
         </header>
 
         <div class="content">
-            <!-- gestion des erreurs -->
-
             <?= $contents ?>
             <!-- contenu des pages -->
         </div>
 
-        <footer>
-            <a href="Mentions">Mentions légales</a> <a href="Confidential">Politique de confidentialité</a>
-        </footer>
+        <section>
+            <h2>Besoin d'un photographe?</h2>
+        </section>
 
-    </div> <!-- #global -->
+        <footer>
+            <p>Entreprise - Copyright ©2019</p>
+            <a href="#">Mentions légales</a>
+            <a href="#">Politique de confidentialité</a>
+        </footer>
 </body>
 
 </html>

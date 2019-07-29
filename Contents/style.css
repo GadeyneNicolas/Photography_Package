@@ -1,42 +1,133 @@
+/* 
+    Contents :
+        1 - Global
+        2 - Header/Nav
+        3 - Content
+        4 - Footer
+ */
+
+/* ---------------------------- 
+        1- Global
+    ---------------------------- */
 html, body {
-    height: 100%;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 body {
-    color: #bfbfbf;
-    background: black;
-    font-family: 'Futura-Medium', 'Futura', 'Trebuchet MS', sans-serif;
-}
-
-h1 {
-    color: white;
-}
-
-.titreBillet {
-    margin-bottom : 0px;
-}
-
-#global {
-    min-height: 100%;  /* Voir commentaire sur html et body plus haut */
-    background: #333534;
-    width: 70%;
-    margin: auto;	/* Permet de centrer la div */
-    text-align: justify;
-    padding: 5px 20px;
-}
-
-#contenu {
-    margin-bottom : 30px;
-}
-
-#titreBlog, #piedBlog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    width: 100%;
 }
 
-#titreReponses {
-    font-size : 100%;
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif !important;
 }
 
-#txtCommentaire {
-    width: 50%;
+p, a {
+    font-family: 'Nunito Sans', sans-serif !important;
+}
+
+a {
+    color: #7971ea;
+    text-decoration: none;
+}
+
+/* ---------------------------- 
+        2- Header/Nav
+    ---------------------------- */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+#header_title h1 {
+    color:  #7971ea;
+}
+
+header i {
+    font-size: 1.3em;
+    margin-left: 15px;
+}
+
+header nav {
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+nav ol {
+    display: flex;
+}
+
+nav li {
+    margin-left: 25px;
+    list-style-type: none;
+}
+
+nav a {
+    font-size: 1.1em;
+}
+
+header a:hover {
+   color: #7971ea;
+}
+
+header a:focus {
+    color: #7971ea;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ---------------------------- 
+        3- Content
+    ---------------------------- */
+
+.content {
+    margin-top: 500px;
+}
+
+/* ---------------------------- 
+        4- Footer
+    ---------------------------- */
+
+footer {
+    width: 100%;
+    border-top: 1px solid lightgrey;
+    margin-bottom: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+footer a {
+    margin-left: 20px;
+    color: black;
+}
+
+footer a:hover {
+    color: #7971ea;
+}
+
+footer p {
+   color: #7971ea;
 }
