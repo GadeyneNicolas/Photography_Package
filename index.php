@@ -1,7 +1,8 @@
 <?php
 session_start ();
 
-require 'src/Engine/Router.php';
+require "vendor/autoload.php";
+use NGADEYNE\Photography_Package\Engine\Router;
 
 $router = new Router();
 $router->routerRequest();

@@ -1,5 +1,7 @@
 <?php
 
+namespace NGADEYNE\Photography_Package\Engine;
+
 class View {
 
     // Nom du fichier associé à la vue

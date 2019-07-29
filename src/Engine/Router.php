@@ -1,6 +1,7 @@
 <?php
 
-require_once 'src/Controler/ControlerPage.php';
+namespace NGADEYNE\Photography_Package\Engine;
+use NGADEYNE\Photography_Package\Controller\ControllerPage;
 
 class Router {
 

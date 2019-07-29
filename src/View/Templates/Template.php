@@ -21,7 +21,7 @@
 
         <header>
             <div id="header_title">
-                <a href="Home">
+                <a href="#">
                     <h1>NG - Photographie</h1>
                 </a> <!-- Titre du site -->
             </div>

@@ -1,6 +1,7 @@
 <?php
 
-require_once 'src/Engine/View.php';
+namespace NGADEYNE\Photography_Package\Controller;
+use NGADEYNE\Photography_Package\Engine\View;
 
 class ControllerPage {
  

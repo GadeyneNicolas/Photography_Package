@@ -1,0 +1,8 @@
+{
+    "autoload": {
+      "psr-4": {
+        "NGADEYNE\\Photography_Package\\":"src/"
+      }
+    }
+}
+  

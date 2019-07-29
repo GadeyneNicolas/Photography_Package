@@ -1,6 +1,6 @@
 <?php
 
-namespace NGADEYNE\Projet5_Photographie\Model;
+namespace NGADEYNE\Photography_Package\Model;
 use PDO;
 
 abstract class Model {
