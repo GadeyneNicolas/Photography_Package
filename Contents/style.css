@@ -39,32 +39,45 @@ a {
     text-decoration: none;
 }
 
+.title_color {
+    color: #7971ea;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
 /* ---------------------------- 
         2- Header/Nav
     ---------------------------- */
 
 header {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: baseline;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     border-bottom: 1px solid lightgrey;
+    height: 90px;
+    z-index: 10;
+    background: white;
 }
 
 #header_title h1 {
     color:  #7971ea;
+    margin-left: 15%;
+    font-size: 2em;
 }
 
 header i {
     font-size: 1.3em;
-    margin-left: 15px;
+    margin-left: 20px;
+    color: #7971ea;
 }
 
 header nav {
-    margin-left: 10%;
+    margin-left: 12%;
     margin-right: 15%;
 }
 
@@ -75,6 +88,17 @@ nav ol {
 nav li {
     margin-left: 25px;
     list-style-type: none;
+    
+}
+
+nav a:hover {
+    border-bottom: 2px solid #7971ea;
+    padding-bottom: 5px;
+}
+
+nav a:focus {
+    border-bottom: 2px solid #7971ea;
+    padding-bottom: 5px;
 }
 
 nav a {
@@ -94,14 +118,72 @@ header a {
     color: black;
 }
 
-
 /* ---------------------------- 
         3- Content
     ---------------------------- */
 
 .content {
-    margin-top: 500px;
+    width: 100%;
+    margin: 0;
 }
+
+/* ---------------------------- 
+        4- Home
+    ---------------------------- */
+
+#banner_home {
+    background-image: url("Illustrations/banner_home.jpg");
+    background-size: cover;
+    height: 700px;
+}
+
+#banner_home_text {
+    padding-top: 200px;
+    color: white;
+}
+
+#banner_home h1 {
+    font-size: 3em;
+}
+
+#banner_home h2 {
+    font-size: 2.5em;
+}
+
+
+#portrait_home img {
+    width: 300px;
+    margin-top: 50px;
+    border-radius: 100%;
+}
+
+#services_home {
+    margin-top: 250px;
+}
+
+#about_home {
+    background-image: url("Illustrations/about_home.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+#about_home_text {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+    color: white;
+}
+
+#about_home_text p {
+    color: white;
+    font-size: 1.3em;
+}
+
+#about_home_text a {
+    color: white;
+    font-size: 1.3em;
+}
+
 
 /* ---------------------------- 
         4- Footer
