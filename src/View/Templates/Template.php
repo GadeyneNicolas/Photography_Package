@@ -29,19 +29,19 @@
                 <div class="header_nav">
                     <!-- Menu non responsive -->
                     <ol class="nav-tabs">
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Mes Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">A Propos</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.php">Accueil</a></li>
+                        <li><a href="index.php?action=Services">Mes Services</a></li>
+                        <li><a href="index.php?action=Portfolio">Portfolio</a></li>
+                        <li><a href="index.php?action=About">A Propos</a></li>
+                        <li><a href="index.php?action=Contact">Contact</a></li>
                     </ol>
                 </div>
             </nav>
 
             <div id="header_icons">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://fr-fr.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/?lang=fr" target="_blank"><i class="fab fa-twitter-square"></i></a>
             </div>
 
         </header>
@@ -51,8 +51,9 @@
             <!-- contenu des pages -->
         </div>
 
-        <section>
-            <h2>Besoin d'un photographe?</h2>
+        <section id="contact_template">
+            <span id="contact_template_text"><h2>Besoin d'un <span class="title_color">photographe?</span></h2></span>
+            <a class="button" href="index.php?action=Contact">Contactez-moi</a>
         </section>
 
         <footer>

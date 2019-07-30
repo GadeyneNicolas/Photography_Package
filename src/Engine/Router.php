@@ -20,6 +20,12 @@ class Router {
                     $this->ctrlPage->about();
                 }   else if (($_GET['action'] == 'Portfolio')) {
                     $this->ctrlPage->portfolio();
+                }   else if (($_GET['action'] == 'Services')) {
+                    $this->ctrlPage->services();
+                }   else if (($_GET['action'] == 'Contact')) {
+                    $this->ctrlPage->contact();
+                }   else if (($_GET['action'] == 'Admin')) {
+                    $this->ctrlPage->admin();
                 }   else {
                     throw new Exception("Action non valide");
                     $this->ctrlPage->error();
