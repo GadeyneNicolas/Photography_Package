@@ -26,6 +26,26 @@ class ControllerPage {
         $view->generate([]);
     }
 
+    public function portrait() {
+        $view = new View("Portrait");
+        $view->generate([]);
+    }
+
+    public function animal() {
+        $view = new View("Animal");
+        $view->generate([]);
+    }
+
+    public function landscape() {
+        $view = new View("Landscape");
+        $view->generate([]);
+    }
+
+    public function urbex() {
+        $view = new View("Urbex");
+        $view->generate([]);
+    }
+
     public function services() {
         $view = new View("Services");
         $view->generate([]);
@@ -33,6 +53,16 @@ class ControllerPage {
 
     public function contact() {
         $view = new View("Contact");
+        $view->generate([]);
+    }
+
+    public function mentions() {
+        $view = new View("Mentions");
+        $view->generate([]);
+    }
+
+    public function confidential() {
+        $view = new View("Confidential");
         $view->generate([]);
     }
 

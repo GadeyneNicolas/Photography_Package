@@ -58,8 +58,8 @@
 
         <footer>
             <p>Entreprise - Copyright ©2019</p>
-            <a href="#">Mentions légales</a>
-            <a href="#">Politique de confidentialité</a>
+            <a href="index.php?action=Mentions">Mentions légales</a>
+            <a href="index.php?action=Confidential">Politique de confidentialité</a>
         </footer>
 </body>
 

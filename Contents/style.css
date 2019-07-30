@@ -148,6 +148,14 @@ header a {
     margin-right: 700px;
 }
 
+#mentions {
+    margin-top: 150px;
+}
+
+#confidential {
+    margin-top: 150px;
+}
+
 /* ---------------------------- 
         4- Home
     ---------------------------- */
@@ -245,7 +253,7 @@ header a {
     margin-top: 10%;
 }
 
-#services_home_block_global {
+.services_home_block_global {
     margin: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -401,6 +409,7 @@ header a {
     width: 100%;
     height: 450px;
 }
+
 #services_block_global {
     margin: 50px;
     display: flex;
@@ -409,14 +418,36 @@ header a {
 }
 
 /* ---------------------------- 
-        4- Services
+        4- Portfolio
     ---------------------------- */
-    #banner_portfolio {
-        background-image: url("Illustrations/banner_portfolio.jpg");
-        background-size: cover;
-        height: 600px;
-    }
-    
+.banner_portfolio {
+    background-image: url("Illustrations/banner_portfolio.jpg");
+    background-size: cover;
+    height: 600px;
+}
+
+.portfolio_grid {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.portfolio_grid img {
+    cursor: pointer;
+    margin: 1%;
+    width: 300px;
+    transition: transform .2s;
+    /* Animation */
+}
+
+.portfolio_grid img:hover {
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 /* ---------------------------- 
         4- Footer
     ---------------------------- */

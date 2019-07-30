@@ -2,6 +2,7 @@
 
 namespace NGADEYNE\Photography_Package\Engine;
 use NGADEYNE\Photography_Package\Controller\ControllerPage;
+use Exception;
 
 class Router {
 
@@ -20,10 +21,22 @@ class Router {
                     $this->ctrlPage->about();
                 }   else if (($_GET['action'] == 'Portfolio')) {
                     $this->ctrlPage->portfolio();
+                }   else if (($_GET['action'] == 'Portrait')) {
+                    $this->ctrlPage->portrait();
+                }   else if (($_GET['action'] == 'Animal')) {
+                    $this->ctrlPage->animal();
+                }   else if (($_GET['action'] == 'Landscape')) {
+                    $this->ctrlPage->landscape();
+                }   else if (($_GET['action'] == 'Urbex')) {
+                    $this->ctrlPage->urbex();
                 }   else if (($_GET['action'] == 'Services')) {
                     $this->ctrlPage->services();
                 }   else if (($_GET['action'] == 'Contact')) {
                     $this->ctrlPage->contact();
+                }   else if (($_GET['action'] == 'Mentions')) {
+                    $this->ctrlPage->mentions();
+                }   else if (($_GET['action'] == 'Confidential')) {
+                    $this->ctrlPage->confidential();
                 }   else if (($_GET['action'] == 'Admin')) {
                     $this->ctrlPage->admin();
                 }   else {
