@@ -21,7 +21,7 @@
             <div class="services_home_block_text">
                 <h3>Portraits</h3>
                 <p>Description</p>
-                <a class="button" href="index.php?action=Services">Voir plus</a>
+                <a class="button" href="services">Voir plus</a>
             </div>
         </div>
 
@@ -30,7 +30,7 @@
             <div class="services_home_block_text">
                 <h3>Animaux</h3>
                 <p>Description</p>
-                <a class="button" href="index.php?action=Services">Voir plus</a>
+                <a class="button" href="services">Voir plus</a>
             </div>
         </div>
 
@@ -39,7 +39,7 @@
             <div class="services_home_block_text">
                 <h3>Paysages</h3>
                 <p>Description</p>
-                <a class="button" href="index.php?action=Services">Voir plus</a>
+                <a class="button" href="services">Voir plus</a>
             </div>
         </div>
 
@@ -48,7 +48,7 @@
             <div class="services_home_block_text">
                 <h3>l'Urbains</h3>
                 <p>Description</p>
-                <a class="button" href="index.php?action=Services">Voir plus</a>
+                <a class="button" href="services">Voir plus</a>
             </div>
         </div>
     </div>
@@ -60,7 +60,7 @@
         <p>Description Description Description Description Description Description Description Description
             Description Description Description Description Description Description Description Description
             Description</p>
-        <a href="index.php?action=About">En savoir plus</a>
+        <a href="apropos">En savoir plus</a>
     </div>
 </section>
 
@@ -69,7 +69,7 @@
     <div id="portfolio_home_block_global">
 
         <div class="portfolio_home_block">
-            <a href="index.php?action=Portrait">
+            <a href="portfolio-portraits">
             <div id="portrait_portfolio" class="portfolio_home_block_img">
                 <div class="portfolio_home_block_text">
                     <h3>Portraits</h3>
@@ -79,7 +79,7 @@
         </div>
 
         <div class="portfolio_home_block">
-            <a href="index.php?action=Animal">
+            <a href="portfolio-animaux">
             <div id="animal_portfolio" class="portfolio_home_block_img">
                 <div class="portfolio_home_block_text">
                     <h3>Animaux</h3>
@@ -89,7 +89,7 @@
         </div>
 
         <div class="portfolio_home_block">
-            <a href="index.php?action=Landscape">
+            <a href="portfolio-paysages">
             <div id="landscape_portfolio" class="portfolio_home_block_img">
                 <div class="portfolio_home_block_text">
                     <h3>Paysages</h3>
@@ -99,7 +99,7 @@
         </div>
 
         <div class="portfolio_home_block">
-            <a href="index.php?action=Urbex">
+            <a href="portfolio-urbex">
             <div id="urbex_portfolio" class="portfolio_home_block_img">
                 <div class="portfolio_home_block_text">
                     <h3>Urbex</h3>

@@ -20,7 +20,7 @@
 <body>
       <header>
             <div id="header_title">
-                <a href="#">
+                <a href="accueil">
                     <h1>Photographie</h1>
                 </a>
             </div>
@@ -36,11 +36,11 @@
                 <div class="nav-container">
                     <!-- Menu non responsive -->
                     <ol class="nav-tabs">
-                        <li class="nav-tab"><a href="index.php">Accueil</a></li>
-                        <li class="nav-tab"><a href="index.php?action=Services">Mes Services</a></li>
-                        <li class="nav-tab"><a href="index.php?action=Portfolio">Portfolio</a></li>
-                        <li class="nav-tab"><a href="index.php?action=About">A Propos</a></li>
-                        <li class="nav-tab"><a href="index.php?action=Contact">Contact</a></li>
+                        <li class="nav-tab"><a href="accueil">Accueil</a></li>
+                        <li class="nav-tab"><a href="services">Mes Services</a></li>
+                        <li class="nav-tab"><a href="portfolio">Portfolio</a></li>
+                        <li class="nav-tab"><a href="apropos">A Propos</a></li>
+                        <li class="nav-tab"><a href="contact">Contact</a></li>
                     </ol>
                 </div>
             </nav>
@@ -60,13 +60,13 @@
 
         <section id="contact_template">
             <span id="contact_template_text"><h2>Besoin d'un <span class="title_color">photographe?</span></h2></span>
-            <a class="button" href="index.php?action=Contact">Contactez-moi</a>
+            <a class="button" href="contact">Contactez-moi</a>
         </section>
 
         <footer>
             <p>Entreprise - Copyright ©2019</p>
-            <a href="index.php?action=Mentions">Mentions légales</a>
-            <a href="index.php?action=Confidential">Politique de confidentialité</a>
+            <a href="mentions-legales">Mentions légales</a>
+            <a href="confidentialite">Politique de confidentialité</a>
         </footer>
 </body>
 

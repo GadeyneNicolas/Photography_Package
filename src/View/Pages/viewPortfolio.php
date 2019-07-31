@@ -14,7 +14,7 @@
             <div class="services_home_block_text">
                 <h3>Portraits</h3>
                 <p>Description</p>
-                <a class="button" href="index.php?action=Portrait">Voir plus</a>
+                <a class="button" href="portfolio-portraits">Voir plus</a>
             </div>
         </div>
 
@@ -23,7 +23,7 @@
             <div class="services_home_block_text">
                 <h3>Animaux</h3>
                 <p>Description</p>
-                <a class="button" href="index.php?action=Animal">Voir plus</a>
+                <a class="button" href="portfolio-animaux">Voir plus</a>
             </div>
         </div>
 
@@ -32,7 +32,7 @@
             <div class="services_home_block_text">
                 <h3>Paysages</h3>
                 <p>Description</p>
-                <a class="button" href="index.php?action=Landscape">Voir plus</a>
+                <a class="button" href="portfolio-paysages">Voir plus</a>
             </div>
         </div>
 
@@ -41,7 +41,7 @@
             <div class="services_home_block_text">
                 <h3>l'Urbains</h3>
                 <p>Description</p>
-                <a class="button" href="index.php?action=Urbex">Voir plus</a>
+                <a class="button" href="portfolio-urbex">Voir plus</a>
             </div>
         </div>
     </div>

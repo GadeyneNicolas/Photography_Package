@@ -159,6 +159,14 @@ header a {
     margin-top: 150px;
 }
 
+#error {
+    margin-top: 150px;
+}
+
+#error img {
+    width: 60vw;
+}
+
 /* ---------------------------- 
         4- Home
     ---------------------------- */
@@ -609,6 +617,18 @@ footer p {
     
     #contact_template_text {
         margin-right: 0;
+    }
+
+    #mentions {
+        margin-top: 250px;
+    }
+    
+    #confidential {
+        margin-top: 250px;
+    }
+    
+    #error {
+        margin-top: 250px;
     }
 }
 

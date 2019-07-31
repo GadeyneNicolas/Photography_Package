@@ -16,7 +16,7 @@
                 <p>Description</p>
                 <p>Description</p>
                 <p>Prix</p>
-                <a href="index.php?action=Contact" class="button">Me contacter</a>
+                <a href="contact" class="button">Me contacter</a>
             </div>
         </div>
 
@@ -27,7 +27,7 @@
                 <p>Description</p>
                 <p>Description</p>
                 <p>Prix</p>
-                <a href="index.php?action=Contact" class="button">Me contacter</a>
+                <a href="contact" class="button">Me contacter</a>
             </div>
         </div>
 
@@ -38,7 +38,7 @@
                 <p>Description</p>
                 <p>Description</p>
                 <p>Prix</p>
-                <a href="index.php?action=Contact" class="button">Me contacter</a>
+                <a href="contact" class="button">Me contacter</a>
             </div>
         </div>
 
@@ -49,7 +49,7 @@
                 <p>Description</p>
                 <p>Description</p>
                 <p>Prix</p>
-                <a href="index.php?action=Contact" class="button">Me contacter</a>
+                <a href="contact" class="button">Me contacter</a>
             </div>
         </div>
     </div>

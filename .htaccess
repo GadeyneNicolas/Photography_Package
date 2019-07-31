@@ -1,0 +1,52 @@
+#--------------------------------------------------
+# Répertoire : PHOTOGRAPHY_PACKAGE
+#--------------------------------------------------
+
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
+
+ErrorDocument 404 /PHOTOGRAPHY_PACKAGE/index.php?action=Error
+
+# Activation du module de réécriture d'URL :
+RewriteEngine on
+RewriteBase /PHOTOGRAPHY_PACKAGE/
+
+#--------------------------------------------------
+# Règles de réécriture d'URL :
+#--------------------------------------------------
+
+# Réécriture de l'URL de l'index.
+RewriteRule ^accueil$ index.php [L]
+
+# Réécriture de l'URL de la page Services.
+RewriteRule ^services$ index.php?action=Services [L]
+
+# Réécriture de l'URL de la page About.
+RewriteRule ^apropos$ index.php?action=About [L]
+
+# Réécriture d l'URL de la page Portfolio. 
+RewriteRule ^portfolio$ index.php?action=Portfolio [L]
+
+# Réécriture d l'URL de la page Portfolio Portrait.
+RewriteRule ^portfolio-portraits$ index.php?action=Portrait [L]
+
+# Réécriture d l'URL de la page Portfolio Animal.
+RewriteRule ^portfolio-animaux$ index.php?action=Animal [L]
+
+# Réécriture d l'URL de la page Portfolio Landscape.
+RewriteRule ^portfolio-paysages$ index.php?action=Landscape [L]
+
+# Réécriture d l'URL de la page Portfolio urbex.
+RewriteRule ^portfolio-urbex$ index.php?action=Urbex [L]
+
+# Réécriture d l'URL de la page Contact.
+RewriteRule ^contact$ index.php?action=Contact [L]
+
+# Réécriture d l'URL de la page Mentions.
+RewriteRule ^mentions-legales$ index.php?action=Mentions [L]
+
+# Réécriture d l'URL de la page Confidential.
+RewriteRule ^confidentialite$ index.php?action=Confidential [L]
+
+
+
