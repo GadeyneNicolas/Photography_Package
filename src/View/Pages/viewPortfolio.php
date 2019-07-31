@@ -39,7 +39,7 @@
         <div class="services_home_block">
             <div id="urbex_services" class="services_home_block_img"></div>
             <div class="services_home_block_text">
-                <h3>Urbex</h3>
+                <h3>l'Urbains</h3>
                 <p>Description</p>
                 <a class="button" href="index.php?action=Urbex">Voir plus</a>
             </div>

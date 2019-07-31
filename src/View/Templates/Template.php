@@ -26,14 +26,21 @@
             </div>
 
             <nav>
-                <div class="header_nav">
+                <input class="hidden" type="checkbox" id="menuToggle"> <!-- Menu burger responsive -->
+                <label class="menu-btn" for="menuToggle">
+                    <span class="menu"></span>
+                    <span class="menu"></span>
+                    <span class="menu"></span>
+                </label>
+
+                <div class="nav-container">
                     <!-- Menu non responsive -->
                     <ol class="nav-tabs">
-                        <li><a href="index.php">Accueil</a></li>
-                        <li><a href="index.php?action=Services">Mes Services</a></li>
-                        <li><a href="index.php?action=Portfolio">Portfolio</a></li>
-                        <li><a href="index.php?action=About">A Propos</a></li>
-                        <li><a href="index.php?action=Contact">Contact</a></li>
+                        <li class="nav-tab"><a href="index.php">Accueil</a></li>
+                        <li class="nav-tab"><a href="index.php?action=Services">Mes Services</a></li>
+                        <li class="nav-tab"><a href="index.php?action=Portfolio">Portfolio</a></li>
+                        <li class="nav-tab"><a href="index.php?action=About">A Propos</a></li>
+                        <li class="nav-tab"><a href="index.php?action=Contact">Contact</a></li>
                     </ol>
                 </div>
             </nav>

@@ -21,7 +21,7 @@
             <div class="services_home_block_text">
                 <h3>Portraits</h3>
                 <p>Description</p>
-                <a class="button" href="index.php?action=Services">En savoir plus</a>
+                <a class="button" href="index.php?action=Services">Voir plus</a>
             </div>
         </div>
 
@@ -30,7 +30,7 @@
             <div class="services_home_block_text">
                 <h3>Animaux</h3>
                 <p>Description</p>
-                <a class="button" href="index.php?action=Services">En savoir plus</a>
+                <a class="button" href="index.php?action=Services">Voir plus</a>
             </div>
         </div>
 
@@ -39,16 +39,16 @@
             <div class="services_home_block_text">
                 <h3>Paysages</h3>
                 <p>Description</p>
-                <a class="button" href="index.php?action=Services">En savoir plus</a>
+                <a class="button" href="index.php?action=Services">Voir plus</a>
             </div>
         </div>
 
         <div class="services_home_block">
             <div id="urbex_services" class="services_home_block_img"></div>
             <div class="services_home_block_text">
-                <h3>Urbex</h3>
+                <h3>l'Urbains</h3>
                 <p>Description</p>
-                <a class="button" href="index.php?action=Services">En savoir plus</a>
+                <a class="button" href="index.php?action=Services">Voir plus</a>
             </div>
         </div>
     </div>

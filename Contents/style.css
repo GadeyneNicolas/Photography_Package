@@ -130,6 +130,9 @@ header a {
     color: black;
 }
 
+#menuToggle {
+    display: none;
+}
 /* ---------------------------- 
         3- Content
     ---------------------------- */
@@ -328,7 +331,7 @@ header a {
     display: flex;
     margin: 5%;
     width: 80vw;
-    height: 40vw;
+    
     box-shadow: 0px 5px 10px grey;
 }
 
@@ -463,7 +466,6 @@ footer {
     margin-top: 80px;
     padding: 20px;
 }
-
 footer a {
     margin-left: 20px;
     color: black;
@@ -475,4 +477,201 @@ footer a:hover {
 
 footer p {
     color: #7971ea;
+}
+
+/* ---------------------------- 
+        4- Media Queries
+    ---------------------------- */
+
+@media screen and (max-width: 1250px) {
+
+    header nav {
+        margin-left: 6%;
+        margin-right: 7%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 200px;
+    }
+
+    #header_title h1 {
+        margin-left: 0;
+    }
+    
+    nav {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-left: 0;
+    }
+
+	.nav-container {
+		position: fixed;
+		display: none;
+		overflow-y: auto;
+		z-index: -1;
+		width: 180px;
+		background: #fff;
+        box-shadow: -1px 0 2px rgba(0, 0, 0, 0.2);
+	}
+
+	.nav-tabs {
+		flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    header nav li {
+        margin-top: 30px;
+    }
+
+	.menu-btn {
+		position: relative;
+		display: block;
+		margin: 0;
+		width: 20px;
+		height: 15px;
+		cursor: pointer;
+		z-index: 2;
+		padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+	}
+
+	.menu-btn .menu {
+		display: block;
+		width: 100%;
+		height: 2px;
+		border-radius: 2px;
+		background:  #7971ea;
+	}
+
+	.menu-btn .menu:nth-child(2) {
+		margin-top: 4px;
+		opacity: 1;
+	}
+
+	.menu-btn .menu:nth-child(3) {
+		margin-top: 4px;
+	}
+
+	#menuToggle:checked + .menu-btn .menu {
+		transition: transform 0.2s ease;
+	}
+
+	#menuToggle:checked + .menu-btn .menu:nth-child(1) {
+		transform: translate3d(0, 6px, 0) rotate(45deg);
+	}
+
+	#menuToggle:checked + .menu-btn .menu:nth-child(2) {
+		transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+		opacity: 0;
+	}
+
+	#menuToggle:checked + .menu-btn .menu:nth-child(3) {
+		transform: translate3d(0, -6px, 0) rotate(-45deg);
+	}
+
+	#menuToggle:checked ~ .nav-container {
+		z-index: 1;
+		display: flex;
+		animation: menu-slide-left 0.3s ease;
+	}
+	@keyframes menu-slide-left {
+		0% {
+			transform: translateX(200px);
+		}
+		to {
+			transform: translateX(0);
+		}
+    }
+
+    #about_block {
+        width: 90vw;
+    }
+
+    #contact_template {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #contact_template_text {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #contact {
+        flex-direction: column;
+    }
+
+    #contact_form {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .services_block {
+        margin-top: 50px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #contact_infos {
+        width: 60vw;
+    }
+
+    #contact_form {
+        width: 60vw;
+    }
+
+    #about_block_img {
+        display: none;
+    }
+
+    #about_block_text {
+        width: 100vw;
+    }
+
+    .services_home_block_text {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    #portrait_home img {
+        width: 200px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .services_home_block_text {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #about_home_text p {
+        font-size: 1.1em;
+    }
 }
