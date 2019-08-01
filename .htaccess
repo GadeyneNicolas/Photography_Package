@@ -42,6 +42,9 @@ RewriteRule ^portfolio-urbex$ index.php?action=Urbex [L]
 # Réécriture d l'URL de la page Contact.
 RewriteRule ^contact$ index.php?action=Contact [L]
 
+# Réécriture d l'URL de la page Send.
+RewriteRule ^send$ index.php?action=Send [L]
+
 # Réécriture d l'URL de la page Mentions.
 RewriteRule ^mentions-legales$ index.php?action=Mentions [L]
 

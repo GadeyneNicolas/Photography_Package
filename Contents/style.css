@@ -378,6 +378,11 @@ header a {
     box-shadow: 0px 5px 15px #ababab;
 }
 
+#contact_infos_text {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
 #contact_form {
     width: 40vw;
     margin-left: 100px;
@@ -396,6 +401,24 @@ header a {
     margin: 10px;
 }
 
+#contact_form textarea {
+    padding: 5px;
+    height: 15vw;
+    width: 20vw;
+}
+
+#contact_form p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#send {
+    margin-top: 150px;
+}
+
+#send img {
+    width: 60vw;
+}
 
 /* ---------------------------- 
         4- Services

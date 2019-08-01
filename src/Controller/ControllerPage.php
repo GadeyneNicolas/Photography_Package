@@ -56,6 +56,11 @@ class ControllerPage {
         $view->generate([]);
     }
 
+    public function send() {
+        $view = new View("Send");
+        $view->generate([]);
+    }
+
     public function mentions() {
         $view = new View("Mentions");
         $view->generate([]);
