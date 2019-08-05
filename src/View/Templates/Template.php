@@ -67,6 +67,7 @@
             <p>Entreprise - Copyright ©2019</p>
             <a href="mentions-legales">Mentions légales</a>
             <a href="confidentialite">Politique de confidentialité</a>
+            <a href="login">Admin</a>
         </footer>
 </body>
 

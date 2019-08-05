@@ -3,6 +3,7 @@
 namespace NGADEYNE\Photography_Package\Engine;
 use NGADEYNE\Photography_Package\Controller\ControllerPage;
 use  NGADEYNE\Photography_Package\Controller\ControllerMail;
+use  NGADEYNE\Photography_Package\Controller\ControllerAdmin;
 use Exception;
 
 class Router {
@@ -13,6 +14,7 @@ class Router {
     public function __construct() {
         $this->ctrlPage = new ControllerPage();
         $this->ctrlMail = new ControllerMail();
+        $this->ctrlAdmin = new ControllerAdmin();
     }
 
     // Route une requête entrante : exécution l'action associée
@@ -42,6 +44,16 @@ class Router {
                     $this->ctrlPage->mentions();
                 }   else if (($_GET['action'] == 'Confidential')) {
                     $this->ctrlPage->confidential();
+                }    else if (($_GET['action'] == 'Login')) {
+                    $this->ctrlPage->login();
+                }   else if ($_GET['action'] == 'Connection') {
+                    $pseudo = $this->getParameter($_POST, 'pseudo');
+                    $mdp = $this->getParameter($_POST, 'mot_de_passe');
+                    $this->ctrlAdmin->connection($pseudo, $mdp);
+                }   else if (($_GET['action'] == 'Disconnection')) {
+                    $this->ctrlAdmin->disconnection();
+                }   else if (($_GET['action'] == 'LoginError')) {
+                    $this->ctrlPage->loginError();
                 }   else if (($_GET['action'] == 'Admin')) {
                     $this->ctrlPage->admin();
                 }   else if ($_GET['action'] == 'Mail') {

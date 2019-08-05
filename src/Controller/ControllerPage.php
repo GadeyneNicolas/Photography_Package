@@ -71,6 +71,16 @@ class ControllerPage {
         $view->generate([]);
     }
 
+    public function login() {
+        $view = new View("Login");
+        $view->generate([]);
+    }
+
+    public function loginError() {
+        $view = new View("LoginError");
+        $view->generate([]);
+    }
+
     public function admin() {
         $view = new View("Admin");
         $view->generate([]);

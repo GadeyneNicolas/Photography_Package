@@ -511,6 +511,63 @@ footer p {
 }
 
 /* ---------------------------- 
+        4- Admin
+    ---------------------------- */
+
+#connection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px #ababab;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+#connection form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+#connection input {
+    padding: 5px;
+    margin: 10px;
+}
+
+#connection_error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    box-shadow: 0px 5px 15px #ababab;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+#admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px #ababab;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+/* ---------------------------- 
         4- Media Queries
     ---------------------------- */
 
