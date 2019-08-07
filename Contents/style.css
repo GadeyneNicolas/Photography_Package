@@ -567,6 +567,52 @@ footer p {
     margin-right: 25vw;
 }
 
+#add_pictures_global {
+    margin-top: 200px;
+}
+
+#add_pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px #ababab;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+#add_pictures form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+#add_pictures input {
+    padding: 5px;
+    margin: 10px;
+}
+
+#add_pictures textarea {
+    padding: 5px;
+    margin: 10px;
+}
+
+#showAnimal {
+    display: none;
+}
+
+#showLandscape {
+    display: none;
+}
+
+#showUrbex {
+    display: none;
+}
+
 /* ---------------------------- 
         4- Media Queries
     ---------------------------- */

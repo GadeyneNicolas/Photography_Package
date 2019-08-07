@@ -12,7 +12,7 @@
     <p>Vous souhaitez :</p>
     <a href="disconnection">Se déconnecter</a>
     <p>Ou alors :</p>
-    <a href="AddPictures">Ajouter une photo</a>
+    <a href="ajouter">Ajouter une photo</a>
     <p>Vous pouvez également controller les différentes photos ou les commentaires.</p>
 
 <?php

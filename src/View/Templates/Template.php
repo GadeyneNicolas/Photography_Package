@@ -58,6 +58,33 @@
             <!-- contenu des pages -->
         </div>
 
+        <?php
+                if (!empty($_SESSION['errors'])){ ?>
+        <div class="errors">
+            <?php
+                foreach ($_SESSION['errors'] as $key => $value){ ?>
+            <p><strong><?= $key ?>: </<strong><?= $value ?></p>
+            <?php }
+            ?>
+        </div>
+
+        <?php
+            $_SESSION['errors'] = [];
+            } ?>
+        <!-- gestion des confirmations -->
+        <?php
+	        if (!empty($_SESSION['confirmations'])){ ?>
+        <div class="confirmations">
+            <?php
+			    foreach ($_SESSION['confirmations'] as $key => $value){ ?>
+            <p><strong><?= $key ?>: </strong><?= $value ?></p>
+            <?php } ?>
+        </div>
+
+        <?php
+		    $_SESSION['confirmations'] = [];
+            } ?>
+
         <section id="contact_template">
             <span id="contact_template_text"><h2>Besoin d'un <span class="title_color">photographe?</span></h2></span>
             <a class="button" href="contact">Contactez-moi</a>

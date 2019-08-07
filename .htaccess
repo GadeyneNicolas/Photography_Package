@@ -51,14 +51,17 @@ RewriteRule ^mentions-legales$ index.php?action=Mentions [L]
 # Réécriture d l'URL de la page Confidential.
 RewriteRule ^confidentialite$ index.php?action=Confidential [L]
 
-# Réécriture de l'URL de l'index.
+# Réécriture de l'URL de l'Admin.
 RewriteRule ^admin$ index.php?action=Admin [L]
 
-# Réécriture de l'URL de l'index.
+# Réécriture de l'URL de l'Add Pictures.
+RewriteRule ^ajouter$ index.php?action=AddPictures [L]
+
+# Réécriture de l'URL de Login.
 RewriteRule ^login$ index.php?action=Login [L]
 
-# Réécriture de l'URL de l'index.
+# Réécriture de l'URL de login Error.
 RewriteRule ^loginError$ index.php?action=LoginError [L]
 
-# Réécriture de l'URL de l'index.
+# Réécriture de l'URL de Disconnection.
 RewriteRule ^disconnection$ index.php?action=Disconnection [L]

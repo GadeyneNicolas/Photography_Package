@@ -85,4 +85,9 @@ class ControllerPage {
         $view = new View("Admin");
         $view->generate([]);
     }
+
+    public function addPictures() {
+        $view = new View("AddPictures");
+        $view->generate([]);
+    }
 } // Fin de la classe

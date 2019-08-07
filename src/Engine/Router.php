@@ -1,20 +1,24 @@
 <?php
 
 namespace NGADEYNE\Photography_Package\Engine;
-use NGADEYNE\Photography_Package\Controller\ControllerPage;
+use  NGADEYNE\Photography_Package\Controller\ControllerPage;
 use  NGADEYNE\Photography_Package\Controller\ControllerMail;
 use  NGADEYNE\Photography_Package\Controller\ControllerAdmin;
+use  NGADEYNE\Photography_Package\Controller\ControllerPictures;
 use Exception;
 
 class Router {
 
     private $ctrlPage;
     private $ctrlMail;
+    private $ctrlAdmin;
+    private $ctrlPictures;
 
     public function __construct() {
         $this->ctrlPage = new ControllerPage();
         $this->ctrlMail = new ControllerMail();
         $this->ctrlAdmin = new ControllerAdmin();
+        $this->ctrlPictures = new ControllerPictures();
     }
 
     // Route une requête entrante : exécution l'action associée
@@ -56,6 +60,12 @@ class Router {
                     $this->ctrlPage->loginError();
                 }   else if (($_GET['action'] == 'Admin')) {
                     $this->ctrlPage->admin();
+                }   else if (($_GET['action'] == 'AddPictures')) {
+                    $this->ctrlPage->addPictures();
+                }   else if ($_GET['action'] == 'AddNewPicsPortrait') {
+                    $titlePicsPortrait = $this->getParameter($_POST, 'title');
+                    $contentPicsPortrait = $this->getParameter($_POST, 'content');
+                    $this->ctrlPictures->AddNewPicsPortrait($titlePicsPortrait, $contentPicsPortrait);
                 }   else if ($_GET['action'] == 'Mail') {
                     $prenomContact = $this->getParameter($_POST, 'prenom');
                     $nomContact = $this->getParameter($_POST, 'nom');
