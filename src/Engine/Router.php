@@ -66,6 +66,18 @@ class Router {
                     $titlePicsPortrait = $this->getParameter($_POST, 'title');
                     $contentPicsPortrait = $this->getParameter($_POST, 'content');
                     $this->ctrlPictures->AddNewPicsPortrait($titlePicsPortrait, $contentPicsPortrait);
+                }   else if ($_GET['action'] == 'AddNewPicsAnimal') {
+                    $titlePicsAnimal = $this->getParameter($_POST, 'title');
+                    $contentPicsAnimal = $this->getParameter($_POST, 'content');
+                    $this->ctrlPictures->AddNewPicsAnimal($titlePicsAnimal, $contentPicsAnimal);
+                }   else if ($_GET['action'] == 'AddNewPicsLandscape') {
+                    $titlePicsLandscape = $this->getParameter($_POST, 'title');
+                    $contentPicsLandscape = $this->getParameter($_POST, 'content');
+                    $this->ctrlPictures->AddNewPicsLandscape($titlePicsLandscape, $contentPicsLandscape);
+                }   else if ($_GET['action'] == 'AddNewPicsUrbex') {
+                    $titlePicsUrbex = $this->getParameter($_POST, 'title');
+                    $contentPicsUrbex= $this->getParameter($_POST, 'content');
+                    $this->ctrlPictures->AddNewPicsUrbex($titlePicsUrbex, $contentPicsUrbex);
                 }   else if ($_GET['action'] == 'Mail') {
                     $prenomContact = $this->getParameter($_POST, 'prenom');
                     $nomContact = $this->getParameter($_POST, 'nom');

@@ -100,7 +100,7 @@
         </div>
 
         <div id="add_pictures_form">
-            <form method="post" action="index.php?action=AddNewPicsLandscape" enctype="multipart/form-data">
+            <form method="post" action="index.php?action=AddNewPicsUrbex" enctype="multipart/form-data">
                 <label for="title">Titre :</label>
                 <input type="text" id="title" name="title" placeholder="Titre" required>
 

@@ -1,13 +1,14 @@
 <?php
 
 namespace NGADEYNE\Photography_Package\Controller;
+use NGADEYNE\Photography_Package\Model\PicturesDAO;
 use NGADEYNE\Photography_Package\Engine\View;
 
 class ControllerPage {
- 
+    private $pictures;
 
     public function __construct() {
-    
+        $this->pictures = new PicturesDAO();
     }
 
 // Affiche la liste de tous les billets du blog
@@ -27,23 +28,27 @@ class ControllerPage {
     }
 
     public function portrait() {
+        $picturesPortrait =  $this->pictures->getPicsBDDPortrait();
         $view = new View("Portrait");
-        $view->generate([]);
+        $view->generate(array('picturesPortrait' => $picturesPortrait));
     }
 
     public function animal() {
+        $picturesAnimal =  $this->pictures->getPicsBDDAnimal();
         $view = new View("Animal");
-        $view->generate([]);
+        $view->generate(array('picturesAnimal' => $picturesAnimal));
     }
 
     public function landscape() {
+        $picturesLandscape =  $this->pictures->getPicsBDDLandscape();
         $view = new View("Landscape");
-        $view->generate([]);
+        $view->generate(array('picturesLandscape' => $picturesLandscape));
     }
 
     public function urbex() {
+        $picturesUrbex =  $this->pictures->getPicsBDDUrbex();
         $view = new View("Urbex");
-        $view->generate([]);
+        $view->generate(array('picturesUrbex' => $picturesUrbex));
     }
 
     public function services() {
@@ -82,8 +87,12 @@ class ControllerPage {
     }
 
     public function admin() {
+        $picturesPortrait =  $this->pictures->getPicsBDDPortrait();
+        $picturesAnimal =  $this->pictures->getPicsBDDAnimal();
+        $picturesLandscape =  $this->pictures->getPicsBDDLandscape();
+        $picturesUrbex =  $this->pictures->getPicsBDDUrbex();
         $view = new View("Admin");
-        $view->generate([]);
+        $view->generate(array('picturesUrbex' => $picturesUrbex, 'picturesPortrait' => $picturesPortrait, 'picturesAnimal' => $picturesAnimal, 'picturesLandscape' => $picturesLandscape));
     }
 
     public function addPictures() {
