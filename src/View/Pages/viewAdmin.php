@@ -94,7 +94,7 @@
             <td>GADEYNE Nicolas</td>
             <td><?= $pictureUrbex->getTitle(); ?></td>
             <td><?= $pictureUrbex->getLink(); ?></td>
-            <?php echo "<td><a href='index.php?action=DeletePicsUrbex&id=".$pictureLandscape->getId()."'>Supprimer</a></td>"; ?>
+            <?php echo "<td><a href='index.php?action=DeletePicsUrbex&id=".$pictureUrbex->getId()."'>Supprimer</a></td>"; ?>
         </tr>
         <?php endforeach; ?>
     </table>

@@ -129,4 +129,48 @@ class ControllerPictures {
         exit();
     }
 
+    // Delete Pictures
+    public function DeletePicsPortrait($idPicsPortrait) {
+        if (isset($_SESSION['pseudo']))
+        {
+        $this->pictures->DeletePicsBDDPortrait($idPicsPortrait);
+            header("Location: admin");
+        } else {
+            header("Location: login");
+        }
+    }
+
+    // Delete Pictures
+    public function DeletePicsAnimal($idPicsAnimal) {
+        if (isset($_SESSION['pseudo']))
+        {
+        $this->pictures->DeletePicsBDDAnimal($idPicsAnimal);
+            header("Location: admin");
+        } else {
+            header("Location: login");
+        }
+    }
+
+    // Delete Pictures
+    public function DeletePicsLandscape($idPicsLandscape) {
+        if (isset($_SESSION['pseudo']))
+        {
+        $this->pictures->DeletePicsBDDLandscape($idPicsLandscape);
+            header("Location: admin");
+        } else {
+            header("Location: login");
+        }
+    }
+
+    // Delete Pictures
+    public function DeletePicsUrbex($idPicsUrbex) {
+        if (isset($_SESSION['pseudo']))
+        {
+        $this->pictures->DeletePicsBDDUrbex($idPicsUrbex);
+            header("Location: admin");
+        } else {
+            header("Location: login");
+        }
+    }
+
 } // Fin de la classe

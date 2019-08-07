@@ -78,6 +78,18 @@ class Router {
                     $titlePicsUrbex = $this->getParameter($_POST, 'title');
                     $contentPicsUrbex= $this->getParameter($_POST, 'content');
                     $this->ctrlPictures->AddNewPicsUrbex($titlePicsUrbex, $contentPicsUrbex);
+                }   else if ($_GET['action'] == 'DeletePicsPortrait') {
+                    $idPicsPortrait = $this->getParameter($_GET, 'id');
+                    $this->ctrlPictures->DeletePicsPortrait($idPicsPortrait); 
+                }   else if ($_GET['action'] == 'DeletePicsAnimal') {
+                    $idPicsAnimal = $this->getParameter($_GET, 'id');
+                    $this->ctrlPictures->DeletePicsAnimal($idPicsAnimal); 
+                }   else if ($_GET['action'] == 'DeletePicsLandscape') {
+                    $idPicsLandscape = $this->getParameter($_GET, 'id');
+                    $this->ctrlPictures->DeletePicsLandscape($idPicsLandscape); 
+                }   else if ($_GET['action'] == 'DeletePicsUrbex') {
+                    $idPicsUrbex = $this->getParameter($_GET, 'id');
+                    $this->ctrlPictures->DeletePicsUrbex($idPicsUrbex); 
                 }   else if ($_GET['action'] == 'Mail') {
                     $prenomContact = $this->getParameter($_POST, 'prenom');
                     $nomContact = $this->getParameter($_POST, 'nom');

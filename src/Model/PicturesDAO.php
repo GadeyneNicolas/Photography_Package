@@ -102,6 +102,26 @@ class PicturesDAO extends Model {
         return $arrayUrbex;
     }
 
+    public function DeletePicsBDDPortrait($idPicsPortrait) {
+        $sql='DELETE FROM T_PICTURES_PORTRAIT WHERE id= ?';
+        $this->executeRequest($sql, array($idPicsPortrait));
+    }
+
+    public function DeletePicsBDDAnimal($idPicsAnimal) {
+        $sql='DELETE FROM T_PICTURES_ANIMAL WHERE id= ?';
+        $this->executeRequest($sql, array($idPicsAnimal));
+    }
+
+    public function DeletePicsBDDLandscape($idPicsLandscape) {
+        $sql='DELETE FROM T_PICTURES_LANDSCAPE WHERE id= ?';
+        $this->executeRequest($sql, array($idPicsLandscape));
+    }
+    
+    public function DeletePicsBDDUrbex($idPicsUrbex) {
+        $sql='DELETE FROM T_PICTURES_Urbex WHERE id= ?';
+        $this->executeRequest($sql, array($idPicsUrbex));
+    }
+
 }
 
 // Fin de la classe
